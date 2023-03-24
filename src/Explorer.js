@@ -12,25 +12,6 @@
 import * as React from 'react';
 
 import {
-  getNamedType,
-  GraphQLObjectType,
-  isEnumType,
-  isInputObjectType,
-  isInterfaceType,
-  isLeafType,
-  isNonNullType,
-  isObjectType,
-  isRequiredInputField,
-  isScalarType,
-  isUnionType,
-  isWrappingType,
-  parse,
-  print,
-  parseType,
-  visit,
-} from 'graphql';
-
-import type {
   ArgumentNode,
   DefinitionNode,
   DocumentNode,
@@ -54,6 +35,22 @@ import type {
   SelectionSetNode,
   VariableDefinitionNode,
   ValueNode,
+  getNamedType,
+  GraphQLObjectType,
+  isEnumType,
+  isInputObjectType,
+  isInterfaceType,
+  isLeafType,
+  isNonNullType,
+  isObjectType,
+  isRequiredInputField,
+  isScalarType,
+  isUnionType,
+  isWrappingType,
+  parse,
+  print,
+  parseType,
+  visit,
 } from 'graphql';
 
 type Field = GraphQLField<any, any>;
